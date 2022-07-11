@@ -29,7 +29,7 @@ def flush_buffer():
 
 def is_window_open():
 
-    return not pyray.window_should_close()
+    return pyray.window_should_close()
 
 
 def open_window():
@@ -45,14 +45,6 @@ def _draw_grid():
 
     for x in range(0, constants.MAX_X, constants.CELL_SIZE):
         pyray.draw_line(x, 0, x, constants.MAX_Y, pyray.GRAY)
-
-
-def _get_x_offset(text, font_size):
-
-    width = pyray.measure_text(text, font_size)
-    return int(width / 2)
-
-
 class VideoService:
     # Allows a video output for the player to see the game.
 
