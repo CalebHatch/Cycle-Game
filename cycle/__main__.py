@@ -30,6 +30,7 @@ def main():
 
     score1.set_player_name(player_1_name)
     score2.set_player_name(player_2_name)
+
     cast.add_player("player_one", player_one)
     cast.add_player("player_two", player_two)
     cast.add_player("score1", score1)
@@ -39,6 +40,7 @@ def main():
     video_service = VideoService()
 
     script = Script()
+    
     script.add_action("input", ControlPlayers(keyboard_service))
     script.add_action("update", DoCollisions(player_one, player_two))
     script.add_action("update", MovePlayers(player_one, player_two))
