@@ -12,10 +12,6 @@ class Coordinate:
 
         return Coordinate(x, y)
 
-    def equals(self, other):
-      
-        return self._x == other.get_x() and self._y == other.get_y()
-
     def get_x(self):
        
         return self._x
@@ -30,7 +26,3 @@ class Coordinate:
         new_y = self._y * -1
 
         return Coordinate(new_x, new_y)
-
-    def scale(self, factor):
-        
-        return Coordinate(self._x * factor, self._y * factor)
