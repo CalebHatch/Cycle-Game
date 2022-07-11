@@ -31,7 +31,7 @@ def main():
     score1.set_player_name(player_1_name)
     score2.set_player_name(player_2_name)
     cast.add_player("player_one", player_one)
-    cast.add_player("cycle_two", player_two)
+    cast.add_player("player_two", player_two)
     cast.add_player("score1", score1)
     cast.add_player("score2", score2)
 
