@@ -18,8 +18,8 @@ def main():
     player_one = Cycle(Coordinate(int(constants.MAX_X - 600), int(constants.MAX_Y / 2)))
     player_two = Cycle(Coordinate(int(constants.MAX_X - 300), int(constants.MAX_Y / 2)))
 
-    player_one.set_cycle_color(constants.GREEN)
-    player_two.set_cycle_color(constants.RED)
+    player_one.set_cycle_color(constants.RED)
+    player_two.set_cycle_color(constants.GREEN)
     
     player_1_name = "Player 1"
     player_2_name = "Player 2"
@@ -40,7 +40,7 @@ def main():
     video_service = VideoService()
 
     script = Script()
-    
+
     script.add_action("input", ControlPlayers(keyboard_service))
     script.add_action("update", DoCollisions(player_one, player_two))
     script.add_action("update", MovePlayers(player_one, player_two))
