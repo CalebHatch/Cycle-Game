@@ -17,10 +17,6 @@ class Cycle(Player):
     def wall(self, game_over):
         wall = self.position(Player)
 
-        velocity = wall.get_velocity()
-        offset = velocity.go_back()
-        position = wall.get_position().add(offset)
-
         if not game_over:
             set_color(self._color)
         else:
