@@ -12,7 +12,6 @@ from game.services.keyboard_service import KeyboardService
 from game.services.video_service import VideoService
 from game.shared.coordinate import Coordinate
 
-
 def main():
 
     player_one = Cycle(Coordinate(int(constants.MAX_X - 600), int(constants.MAX_Y / 2)))

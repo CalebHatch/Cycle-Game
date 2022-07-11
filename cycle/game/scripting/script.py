@@ -12,13 +12,6 @@ class Script:
         if action not in self._actions[group]:
             self._actions[group].append(action)
 
-    def get_actions(self, group):
-        
-        results = []
-        if group in self._actions.keys():
-            results = self._actions[group].copy()
-        return results
-
     def remove_action(self, group, action):
         
         if group in self._actions:
