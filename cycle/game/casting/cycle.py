@@ -10,10 +10,6 @@ class Cycle(Player):
         self._color = Color(255, 255, 255)
         self._name = ""
 
-    def get_cycle(self):
-        
-        return self._segments[0]
-
     def wall(self, game_over):
         wall = self.position(Player)
 
