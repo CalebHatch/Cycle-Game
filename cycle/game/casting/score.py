@@ -6,7 +6,6 @@ class _Score(Player):
     
     def __init__(self):
        
-        super().__init__()
         self._coordinates = 0
         position = Coordinate(0, 0)
         self._player_name = "player"
