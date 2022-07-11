@@ -12,13 +12,6 @@ class Cast:
         if player not in self._players[group]:
             self._players[group].append(player)
 
-    def get_player(self, group):
-
-        results = []
-        if group in self._players.keys():
-            results = self._players[group].copy()
-        return results
-
     def get_players(self):
 
         results = []

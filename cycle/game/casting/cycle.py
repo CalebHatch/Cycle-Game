@@ -1,9 +1,17 @@
 import constants
 from cycle.game.casting.game_over import set_color
 from game.casting.player import Player
-from game.shared.color import Color
 from game.shared.coordinate import Coordinate
 
+class Color:
+
+    def __init__(self, red, green, blue, alpha=255):
+        self._red = red
+        self._green = green
+        self._blue = blue
+
+    def colors(self):
+        return self._red, self._green, self._blue
 class Cycle(Player):
     
     def __init__(self):
