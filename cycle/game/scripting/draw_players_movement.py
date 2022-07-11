@@ -15,5 +15,6 @@ class DrawPlayersMovement(Action):
 
         self._video_service.clear_buffer()
         self._video_service.flush_buffer()
+        
         self._video_service.draw_player(score1)
         self._video_service.draw_player(score2)
