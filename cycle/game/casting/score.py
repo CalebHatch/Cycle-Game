@@ -1,5 +1,4 @@
 from game.casting.player import Player
-from game.shared.coordinate import Coordinate
 
 
 class _Score(Player):
@@ -9,7 +8,7 @@ class _Score(Player):
        
         self._coordinates = 0
         self._player_name = "player"
-        self.set_text(f"{self._player_name}")
+        self.set_text(self._player_name)
 
     def get_score(self):
         

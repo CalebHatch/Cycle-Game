@@ -2,7 +2,7 @@ from game.scripting.action import Action
 
 
 class DrawPlayersMovement(Action):
-    # Draws ou the players' cycles.
+    # Draws out the players' cycles.
   
     def __init__(self, video_service):
        

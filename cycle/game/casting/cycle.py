@@ -5,7 +5,7 @@ from game.shared.coordinate import Coordinate
 
 class Color:
 
-    def __init__(self, red, green, blue, alpha=255):
+    def __init__(self, red, green, blue):
         self._red = red
         self._green = green
         self._blue = blue
