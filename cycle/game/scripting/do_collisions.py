@@ -6,6 +6,7 @@ from game.casting.game_over import GameOver
 
 
 class DoCollisions(Action):
+    # Handles the collision interaction between the players.
 
     def __init__(self):
 

@@ -1,4 +1,5 @@
 class Coordinate:
+    # Is able to place the players' cycles where they are supposed to be.
     
     def __init__(self, x, y):
 

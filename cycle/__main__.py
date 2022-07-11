@@ -13,6 +13,7 @@ from game.services.video_service import VideoService
 from game.shared.coordinate import Coordinate
 
 def main():
+    # Main drives the program.
 
     player_one = Cycle(Coordinate(int(constants.MAX_X - 600), int(constants.MAX_Y / 2)))
     player_two = Cycle(Coordinate(int(constants.MAX_X - 300), int(constants.MAX_Y / 2)))

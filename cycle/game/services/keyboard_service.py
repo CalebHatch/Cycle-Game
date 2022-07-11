@@ -2,6 +2,7 @@ import pyray
 
 
 class KeyboardService:
+    # Allows the inputs of the players to be detected.
    
     def __init__(self):
         

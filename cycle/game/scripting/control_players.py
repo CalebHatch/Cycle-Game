@@ -4,6 +4,7 @@ from game.shared.coordinate import Coordinate
 
 
 class ControlPlayers(Action):
+    # Controls the method of action of the players.
 
     def __init__(self, keyboard_service):
 

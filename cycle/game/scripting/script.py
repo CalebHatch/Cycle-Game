@@ -1,4 +1,5 @@
 class Script:
+    # Library for the actions that are to be performed.
 
     def __init__(self):
 

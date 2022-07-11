@@ -7,7 +7,7 @@ class Color:
 
     def colors(self):
         return self._red, self._green, self._blue
-
+# Constants that the program will use.
 COLUMNS = 40
 ROWS = 20
 CELL_SIZE = 15

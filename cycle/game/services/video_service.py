@@ -12,15 +12,8 @@ def draw_player(player, centered=False):
     text = player.get_text()
     x = player.get_position().get_x()
     y = player.get_position().get_y()
-    font_size = player.get_font_size()
-    color = player.get_color().to_tuple()
 
-    if centered:
-        width = pyray.measure_text(text, font_size)
-        offset = int(width / 2)
-        x -= offset
-
-    pyray.draw_text(text, x, y, font_size, color)
+    pyray.draw_text(text, x, y)
 
 
 def draw_players(players, centered=False):
@@ -61,6 +54,7 @@ def _get_x_offset(text, font_size):
 
 
 class VideoService:
+    # Allows a video output for the player to see the game.
 
     def __init__(self, debug = False):
         
