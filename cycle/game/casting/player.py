@@ -3,6 +3,7 @@ from game.shared.coordinate import Coordinate
 
 
 class Player:
+    # Keeps track of position and velocity of each player.
 
     def __init__(self):
         self._text = ""

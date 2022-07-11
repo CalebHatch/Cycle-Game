@@ -3,6 +3,7 @@ from game.shared.coordinate import Coordinate
 
 
 class _Score(Player):
+    # Keeps record of score and points earned or lost.
     
     def __init__(self):
        

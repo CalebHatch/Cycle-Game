@@ -13,6 +13,7 @@ class Color:
     def colors(self):
         return self._red, self._green, self._blue
 class Cycle(Player):
+    # Gets player's cycles to move around and have color
     
     def __init__(self):
         self._color = Color(255, 255, 255)

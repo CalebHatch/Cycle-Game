@@ -6,6 +6,7 @@ def _execute_actions(group, cast, script):
 
 
 class Director:
+    # Controls and directs the game.
 
     def __init__(self, video_service):
 

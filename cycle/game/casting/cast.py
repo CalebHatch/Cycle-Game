@@ -1,4 +1,5 @@
 class Cast:
+    # Keeps track and record of the group of players
 
     def __init__(self):
 
