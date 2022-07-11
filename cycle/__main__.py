@@ -33,6 +33,7 @@ def main():
 
     cast.add_player("player_one", player_one)
     cast.add_player("player_two", player_two)
+
     cast.add_player("score1", score1)
     cast.add_player("score2", score2)
 
@@ -42,6 +43,7 @@ def main():
     script = Script()
 
     script.add_action("input", ControlPlayers(keyboard_service))
+    
     script.add_action("update", DoCollisions(player_one, player_two))
     script.add_action("update", MovePlayers(player_one, player_two))
     script.add_action("output", DrawPlayersMovement(video_service))
