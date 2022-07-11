@@ -11,7 +11,12 @@ class Cast:
             self._players[group] = []
 
         if player not in self._players[group]:
-            self._players[group].append(player)
+            self._players[group].append(player)\
+
+    def remove_player(self, group, player):
+
+        if group in self._players:
+            self._players[group].remove(player)
 
     def get_players(self):
 
@@ -19,8 +24,3 @@ class Cast:
         for group in self._players:
             results.extend(self._players[group])
         return results
-
-    def remove_player(self, group, player):
-
-        if group in self._players:
-            self._players[group].remove(player)
