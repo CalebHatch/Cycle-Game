@@ -6,25 +6,17 @@ from game.shared.coordinate import Coordinate
 
 class Cycle(Player):
     
-    def __init__(self, position):
-        
-        super().__init__()
-
-        self._segments = []
+    def __init__(self):
         self._color = Color(255, 255, 255)
         self._name = ""
-
-    def get_segments(self):
-        
-        return self._segments
 
     def get_cycle(self):
         
         return self._segments[0]
 
     def wall(self, game_over):
-        
-        wall = self._segments[-1]
+        wall = self.position(Player)
+
         velocity = wall.get_velocity()
         offset = velocity.go_back()
         position = wall.get_position().add(offset)
@@ -41,9 +33,6 @@ class Cycle(Player):
 
         for i in range(constants.CYCLE_LENGTH):
             position = Coordinate(x, y + i * constants.CELL_SIZE)
-            velocity = Coordinate(0, 1 * -constants.CELL_SIZE)
-            text = "O" if i == 0 else "#"
-
             set_color(self._color)
 
     def turn_cycle(self, velocity):
