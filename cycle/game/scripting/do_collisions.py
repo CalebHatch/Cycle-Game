@@ -27,10 +27,8 @@ class DoCollisions(Action):
         position = Coordinate(x, y)
 
         if self._is_game_over:
-            game_over = GameOver()
-            game_over.set_position(position)
+            game_over = GameOver(position)
             game_over.set_text(self._game_over_message)
             game_over.set_font_size(50)
-            cast.add_player("messages", game_over)
 
 
