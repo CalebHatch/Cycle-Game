@@ -1,6 +1,5 @@
 from game.scripting.action import Action
 
-
 class MovePlayers(Action):
     # Allows the actors to move.
 
