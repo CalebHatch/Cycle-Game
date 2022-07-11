@@ -8,6 +8,7 @@ class Player:
     def __init__(self):
         self._text = ""
         self._font_size = 15
+        
         self._position = Coordinate(0, 0)
         self._velocity = Coordinate(0, 0)
 
