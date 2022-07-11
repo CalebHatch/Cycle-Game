@@ -40,8 +40,8 @@ def main():
 
     script = Script()
     script.add_action("input", ControlPlayers(keyboard_service))
-    script.add_action("update", DoCollisions())
-    script.add_action("update", MovePlayers())
+    script.add_action("update", DoCollisions(player_one, player_two))
+    script.add_action("update", MovePlayers(player_one, player_two))
     script.add_action("output", DrawPlayersMovement(video_service))
 
     director = Director(video_service)
