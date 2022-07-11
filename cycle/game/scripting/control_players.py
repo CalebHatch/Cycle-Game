@@ -9,6 +9,7 @@ class ControlPlayers(Action):
     def __init__(self, keyboard_service):
 
         self._keyboard_service = keyboard_service
+        
         self._player_one_direction = Coordinate(0, -constants.CELL_SIZE)
         self._player_two_direction = Coordinate(0, -constants.CELL_SIZE)
 
