@@ -1,5 +1,4 @@
 import constants
-from game.shared.color import Color
 from game.shared.coordinate import Coordinate
 
 
@@ -8,7 +7,6 @@ class Player:
     def __init__(self):
         self._text = ""
         self._font_size = 15
-        self._color = Color(255, 255, 255)
         self._position = Coordinate(0, 0)
         self._velocity = Coordinate(0, 0)
 
