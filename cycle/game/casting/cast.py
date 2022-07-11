@@ -7,11 +7,11 @@ class Cast:
 
     def add_player(self, group, player):
 
-        if group not in self._players.keys():
-            self._players[group] = []
-
         if player not in self._players[group]:
             self._players[group].append(player)
+
+        if group not in self._players.keys():
+            self._players[group] = []
 
     def remove_player(self, group, player):
 
