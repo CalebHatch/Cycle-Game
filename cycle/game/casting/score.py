@@ -7,10 +7,8 @@ class _Score(Player):
     def __init__(self):
        
         self._coordinates = 0
-        position = Coordinate(0, 0)
         self._player_name = "player"
-        self.set_text(f"{self._player_name}: {self._coordinates}")
-        self.set_position(position)
+        self.set_text(f"{self._player_name}")
 
     def get_score(self):
         
